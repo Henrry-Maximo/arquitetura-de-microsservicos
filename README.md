@@ -113,3 +113,6 @@
   - Busca vários dados de diversos serviços, e reune somente em um endpoint, um recurso como todo.
   - Por exemplo, um array de pedido, tendo dados do pedido, da fatura, data de entrega etc. Vários serviços sendo consumidos, mas retornando somente uma rota para o frontend.
   - Tendo várias aplicações, precisando buscar dados de várias dessas, podemos utilizar um GraphQL (Federation: vários APIs em uma só).
+
+# Documentação
+  - Event Catalog: https://www.eventcatalog.dev/
