@@ -55,3 +55,19 @@
 
 - Uma aplicação que vive entre os serviços, uma aplicação que centraliza todos os endpoints, todas as rotas.
   - GET /orders -> https://nb2ju1nb3213-orders.rocketseat.com.br
+
+# Comandos
+
+- npm init -y
+- npm i fastify @fastify/cors fastify-type-provider-zod zod
+- Em package: "script" -> "dev": "node --experimental-strip-types --watch --no-warnings src/http/server.ts"
+- Em package: "script" -> "start": "node --experimental-strip-types --no-warnings src/http/server.ts"
+- npm i typescript @types/node -D
+- npm i @tsconfig/node22 -D
+- npm i drizzle-kit
+- npm i drizzle-orm
+
+# Escalonamento Horizontal
+
+
+# Deploy: Blue-green deployment
