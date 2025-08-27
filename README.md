@@ -59,6 +59,21 @@
   - POST /orders -> httpas://ada23131231eweea-orders.rocketseat.com.br
   - Direciona a chamada dentre todos os serviços presentes/disponíveis.
 
+# Comandos
+
+- npm init -y
+- npm i fastify @fastify/cors fastify-type-provider-zod zod
+- Em package: "script" -> "dev": "node --experimental-strip-types --watch --no-warnings src/http/server.ts"
+- Em package: "script" -> "start": "node --experimental-strip-types --no-warnings src/http/server.ts"
+- npm i typescript @types/node -D
+- npm i @tsconfig/node22 -D
+- npm i drizzle-kit
+- npm i drizzle-orm
+
+# Escalonamento Horizontal
+
+# Deploy: Blue-green deployment
+
 # Distributed Tracing
   - No momento que o usuário realiza uma solicitação de pedido, ou seja, um pedido novo. Deve se criar um `traceId`, uma identificação única da requisição. De serviço em serviço, após o envio ao message broker (serviço de mensageria), sempre levando o `traceId` entre as mensagens.
   - Ex.: O serviço de `Invoices` (consumer), irá checar o message broker em busca de algum evento de mensagem. Se tiver algum, fará a emissão da nota fiscal junto do `traceId`. Estando no sistema de monitoramento, é só encaminhar o traceId junto da requisição. Deste jeito, é possível ver quanto tempo a solicitação leva em cada serviço.
