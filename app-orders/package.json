@@ -1,0 +1,19 @@
+{
+  "name": "app-orders",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "node --experimental-strip-types --watch --no-warnings src/http/server.ts",
+    "start": "node --experimental-strip-types --no-warnings src/http/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "fastify": "^5.5.0",
+    "fastify-type-provider-zod": "^5.0.3",
+    "zod": "^4.1.4"
+  }
+}
